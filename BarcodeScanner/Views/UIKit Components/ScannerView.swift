@@ -49,6 +49,6 @@ struct ScannerView: UIViewControllerRepresentable {
 
 struct ScannerView_Previews: PreviewProvider {
     static var previews: some View {
-        ScannerView(scannedCode: .constant("123456"), alertItem: .constant(AlertItem(title: "Test title", message: "Test message", dismissButton: .default(Text("Ok")))))
+        ScannerView(scannedCode: .constant("123456"), alertItem: .constant(AlertItem(title: Text("Test title"), message: Text("Test message"), dismissButton: .default(Text("Ok")))))
     }
 }
